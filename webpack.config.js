@@ -1,12 +1,17 @@
 const path = require('path');
 
+const APP_DIR = path.resolve(__dirname, 'src');
+const BUILD_DIR = path.resolve(__dirname, 'public');
+
+
 var config = {
-    entry: './main.js', // entry point
+    entry: APP_DIR + '/index.js', // entry point
     output: {
-        path: path.resolve(__dirname, './dist'),
-        filename: 'index.js', // place where bundled app will be served
+        path: BUILD_DIR,
+        filename: 'bundle.js', // place where bundled app will be served
     },
     devServer: {
+        contentBase: BUILD_DIR,
         inline: true, // autorefresh
         port: 8080 // development port server
     },
