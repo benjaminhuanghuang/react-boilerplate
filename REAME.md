@@ -1,22 +1,31 @@
 # React App Boilerplate
 
-## Dependencies
-    react
-    react-dom
+## Reference
+- https://webpack.docschina.org/
 
-## Dev Dependencies
-    We use babel to transpile JSX code and ES6 code, so we need
-        babel-core
-        babel-preset-react
-        babel-preset-es2015
-    We use webpack to manage the process, so we need
-        babel-loader
+- React 16+React-Router4 从零打造企业级电商后台管理系统
+    - https://www.bilibili.com/video/av26958424/?p=2
+    - https://gitee.com/imooccode/happymmallwiki/wikis/Home
 
-    webpack-dev-server can execute webpack and start a web server.
-    we can config webpack-dev-server in the webpack.config.js
-  
-## Project Structure
-    app.js
-    index.html
-    
-## Start 
+- https://github.com/benjaminhuanghuang/react-ecommerce
+
+
+## Features
+- Babel
+    - ES
+    - React
+
+- CSS / SCSS
+
+- Static files (HTML, Images, Font, Icon ...)
+
+- Dev server
+    - Hot loading
+    - Proxy
+
+- webpack for multi environments
+
+## Update
+```
+    yarn upgrade-interactive
+```

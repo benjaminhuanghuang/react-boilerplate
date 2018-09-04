@@ -3,7 +3,7 @@ class App extends React.Component {
    render() {
       return (
          <h1>
-            This is a React boilerplate project!
+            This is a React boilerplate project !!
          </h1>
       );
    }
