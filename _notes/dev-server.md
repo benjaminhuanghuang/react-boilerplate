@@ -6,7 +6,7 @@ npm i -D webpack-dev-server
 ```
 
 ## proxy for development
-This feature is very useful to CROS issue.
+This feature is very useful to Cross-origin resource sharing (CORS) issue.
 ```
 ```
 
