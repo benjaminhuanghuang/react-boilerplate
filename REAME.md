@@ -28,6 +28,6 @@ webpack.config.js
 
 ## Run project
 ```
-    "start": "webpack-dev-server --hot",
+    "start": "webpack-dev-server --open --port 3721",
     "build": "webpack"
 ```

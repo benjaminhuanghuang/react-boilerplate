@@ -4,21 +4,13 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "webpack-dev-server --hot",
+    "start": "webpack-dev-server --open --port 3721",
     "build": "webpack",
     "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/benjaminhuanghuang/react-boilerplate.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/benjaminhuanghuang/react-boilerplate/issues"
-  },
-  "homepage": "https://github.com/benjaminhuanghuang/react-boilerplate#readme",
   "dependencies": {
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
