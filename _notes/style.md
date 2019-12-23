@@ -3,11 +3,14 @@
 
 ## css
 ```
-npm install style-loader css-loader extract-text-webpack-plugin -D
+npm install style-loader css-loader sass-loader -D
 ```
 
-## sass
+style-loader 的功能就一个，在 DOM 里插入一个 <style> 标签，并且将 CSS 写入这个标签内。
+简单来说就是这样：
 ```
-npm install sass-loader node-sass --save-dev
+const style = document.createElement('style'); // 新建一个 style 标签
+style.type = 'text/css';
+style.appendChild(document.createTextNode(content)) // CSS 写入 style 标签
+document.head.appendChild(style); // style 标签插入 head 中
 ```
-node-sass and webpack are sass-loader's peerDependency

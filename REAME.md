@@ -1,18 +1,8 @@
-# React App Boilerplate
+# React + WebPack Project Boilerplate
 
-## Reference
-- https://webpack.docschina.org/
-
-- React 16+React-Router4 从零打造企业级电商后台管理系统
-    - https://www.bilibili.com/video/av26958424/?p=2
-    - https://gitee.com/imooccode/happymmallwiki/wikis/Home
-
-- https://github.com/benjaminhuanghuang/react-ecommerce
-
-
-## Features
+## Key points
 - Babel
-    - ES
+    - ES6,7
     - React
 
 - CSS / SCSS
@@ -23,9 +13,21 @@
     - Hot loading
     - Proxy
 
-- webpack for multi environments
+- Webpack config for multi environments
 
-## Update
+## Folder Structure
 ```
-    yarn upgrade-interactive
+assets/
+public/
+src/
+
+babel.config.js
+package.json
+webpack.config.js
+```
+
+## Run project
+```
+    "start": "webpack-dev-server --hot",
+    "build": "webpack"
 ```

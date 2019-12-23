@@ -20,29 +20,31 @@
   },
   "homepage": "https://github.com/benjaminhuanghuang/react-boilerplate#readme",
   "dependencies": {
-    "react": "^16.4.2",
-    "react-dom": "^16.4.2",
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0",
     "font-awesome": "^4.7.0",
-    "prop-types": "^15.6.2",
-    "react-router-dom": "^4.3.1",
-    "redux":"^4.0.0",
-    "react-redux":"^5.0.7"
+    "prop-types": "^15.7.2",
+    "react-router-dom": "^5.1.2",
+    "redux": "^4.0.4",
+    "react-redux": "^7.1.3"
   },
   "devDependencies": {
-    "babel-core": "^6.26.3",
-    "babel-loader": "^7.1.5",
+    "@babel/core": "^7.7.7",
+    "@babel/preset-env": "^7.7.7",
+    "@babel/preset-react": "^7.7.4",
+    "babel-loader": "^8.0.6",
     "babel-preset-env": "^1.7.0",
     "babel-preset-react": "^6.24.1",
-    "css-loader": "^1.0.0",
+    "css-loader": "^1.0.1",
     "extract-text-webpack-plugin": "^4.0.0-beta.0",
     "file-loader": "^1.1.11",
     "html-webpack-plugin": "^3.2.0",
     "node-sass": "^4.9.2",
-    "sass-loader": "^7.1.0",
+    "sass-loader": "^7.3.1",
     "style-loader": "^0.22.1",
     "url-loader": "^1.0.1",
-    "webpack": "^4.16.5",
-    "webpack-cli": "^3.1.0",
-    "webpack-dev-server": "^3.1.5"
+    "webpack": "^4.41.4",
+    "webpack-cli": "^3.3.10",
+    "webpack-dev-server": "^3.10.1"
   }
 }
