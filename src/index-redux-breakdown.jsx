@@ -19,7 +19,7 @@ function App() {
 
   const handleClick = () => {
     /*
-      Dispatch a action to producer
+      Dispatch a action to reducer
     */
     store.dispatch({ type: "CHANGE_TIME" });
   };
