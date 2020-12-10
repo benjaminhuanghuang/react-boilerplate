@@ -1,13 +1,25 @@
 import React from 'react';
-import './App.scss'
+import {BrowserRouter as Router, Switch, Route}  from 'react-router-dom'
 
-class App extends React.Component {
-   render() {
-      return (
-         <h1>
-            This is a React boilerplate project !!
-         </h1>
-      );
-   }
-}
+import './App.scss'
+import Header from "./components/Header";
+
+import Home from "./pages/Home";
+import Products from "./pages/Products";
+import Reports from "./pages/Reports";
+
+
+function App() {
+   return (
+     <Router>
+       <Header />
+       <Switch>
+         <Route path="/" exact component={Home} />
+         <Route path="/reports" component={Reports} />
+         <Route path="/products" component={Products} />
+       </Switch>
+     </Router>
+   );
+ }
+
 export default App;

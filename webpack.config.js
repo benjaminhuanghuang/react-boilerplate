@@ -1,12 +1,12 @@
 const path = require("path");
-// create html refering the bundle.js
+// create html based on a template and and import bundle.js
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 
 const config = {
-  entry: "./src/index-redux-breakdown",
-  //   entry: "./src/index.jsx",
+  // entry: "./src/index-redux-breakdown",
+  entry: "./src/index.jsx",
   output: {
-    path: path.resolve(__dirname, "public"),
+    path: path.resolve(__dirname, "dist"),
     filename: "bundle.js",
   },
   module: {
@@ -31,14 +31,15 @@ const config = {
   },
   mode: "development",
   devServer: {
-    contentBase: path.join(__dirname, "public"),
+    contentBase: path.join(__dirname, "dist"),
     compress: true,
+    historyApiFallback: true,   /* Important! */
     port: 3721,
   },
   plugins: [
     new HtmlWebpackPlugin({
-      template: "public/index.html",
-      favicon: "public/favicon.ico",
+      template: "assets/index.html",
+      favicon: "assets/favicon.ico",
     }),
   ],
 };
