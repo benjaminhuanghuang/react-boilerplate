@@ -1,6 +1,7 @@
 import React from "react";
 import {Navbar, Nav} from 'react-bootstrap'
 import { withRouter } from "react-router";
+import { Link } from "react-router-dom";
 
 //
 const Header = (props) => {
@@ -9,9 +10,9 @@ const Header = (props) => {
     <Navbar bg="dark" variant="dark">
       <Navbar.Brand href="#home">Navbar</Navbar.Brand>
       <Nav className="mr-auto" activeKey={location.pathname}>
-        <Nav.Link href="/">Home</Nav.Link>
-        <Nav.Link href="/products">Products</Nav.Link>
-        <Nav.Link href="/reports">Reposts</Nav.Link>
+        <Nav.Link as={Link} to="/">Home</Nav.Link>
+        <Nav.Link as={Link} to="/products">Products</Nav.Link>
+        <Nav.Link as={Link} to="/reports">Reposts</Nav.Link>
       </Nav>
     </Navbar>
   );

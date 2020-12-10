@@ -29,12 +29,12 @@ const config = {
   resolve: {
     extensions: [".js", ".jsx"],
   },
-  mode: "development",
+  mode: "production",
   devServer: {
     contentBase: path.join(__dirname, "dist"),
     compress: true,
     historyApiFallback: true,   /* Important! */
-    port: 3721,
+    port: 3721
   },
   plugins: [
     new HtmlWebpackPlugin({
