@@ -8,7 +8,7 @@ const Header = (props) => {
   const { location } = props;
   return (
     <Navbar bg="dark" variant="dark">
-      <Navbar.Brand href="#home">Navbar</Navbar.Brand>
+      <Navbar.Brand as={Link} to="/">Navbar</Navbar.Brand>
       <Nav className="mr-auto" activeKey={location.pathname}>
         <Nav.Link as={Link} to="/">Home</Nav.Link>
         <Nav.Link as={Link} to="/products">Products</Nav.Link>
