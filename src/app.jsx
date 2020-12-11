@@ -8,6 +8,7 @@ import Header from "./components/Header";
 import Home from "./pages/Home";
 import Products from "./pages/Products";
 import Reports from "./pages/Reports";
+import {TodoList} from "./pages/todos";
 
 
 function App() {
@@ -18,6 +19,7 @@ function App() {
          <Route path="/" exact component={Home} />
          <Route path="/reports" component={Reports} />
          <Route path="/products" component={Products} />
+         <Route path="/todos" component={TodoList} />
        </Switch>
      </Router>
    );

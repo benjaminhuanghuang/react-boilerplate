@@ -3,8 +3,8 @@ const path = require("path");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 
 const config = {
-  // entry: "./src/index-redux-breakdown",
   entry: "./src/index.jsx",
+  devtool:"eval-source-map",  // debugging
   output: {
     path: path.resolve(__dirname, "dist"),
     filename: "bundle.js",

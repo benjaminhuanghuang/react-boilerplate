@@ -13,6 +13,7 @@ const Header = (props) => {
         <Nav.Link as={Link} to="/">Home</Nav.Link>
         <Nav.Link as={Link} to="/products">Products</Nav.Link>
         <Nav.Link as={Link} to="/reports">Reposts</Nav.Link>
+        <Nav.Link as={Link} to="/todos">Todos</Nav.Link>
       </Nav>
     </Navbar>
   );
