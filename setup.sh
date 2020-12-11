@@ -11,4 +11,6 @@ npm i css-loader style-loader sass-loader node-sass -D
 
 npm i bootstrap react-bootstrap
 
+nmp i -D react-hot-loader
+
 
